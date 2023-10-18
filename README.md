@@ -112,13 +112,14 @@ $ sudo python3 st.py
 
 ### Docker Instructions
 
-Build containers
+# Build containers
 docker build -t stormbreaker .
 docker run -it stormbreaker
 
-Start the container if it got closed
-docker start ID
+# Start the container if it got closed
+docker start CONTAINER_ID
 
-Start ngrok in another tab by interactive shell with the container
-docker exec-it ID /bin/bash
+# Start Ngrok in another tab by an interactive shell with the container
+docker exec -it CONTAINER_ID /bin/bash
 ngrok http 2525
+

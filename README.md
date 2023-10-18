@@ -109,3 +109,16 @@ $ sudo python3 st.py
 > To run ngrok on termux you need to enable your personal hotspot and cellular network.
 
 </p>
+
+### Docker Instructions
+
+Build containers
+docker build -t stormbreaker .
+docker run -it stormbreaker
+
+Start the container if it got closed
+docker start ID
+
+Start ngrok in another tab by interactive shell with the container
+docker exec-it ID /bin/bash
+ngrok http 2525

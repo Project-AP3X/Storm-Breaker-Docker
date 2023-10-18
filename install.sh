@@ -23,7 +23,7 @@ checkroot() {
 }
 termux_based() {
     apt-get update
-    pkg install python php # use pkg install
+    pkg install -y -qq python php # use pkg install
     if [ "$?" -ne 0 ]; then
         printf "${RED}An error occurred! seems pkg install doesn't work.\n${RST}"
         exit 1
@@ -31,7 +31,7 @@ termux_based() {
 }
 apt_based() {
     apt-get update
-    apt-get install python3 python3-pip php
+    apt-get install -y -qq python3 python3-pip php
     if [ "$?" -ne 0 ]; then
         printf "${RED}An error occurred! seems apt-get doesn't work.\n${RST}"
         exit 1

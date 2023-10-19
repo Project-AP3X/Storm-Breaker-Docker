@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y git python3 python3-pip php curl
 
 # Clone the GitHub repository
-RUN git clone https://github.com/v4run75/Storm-Breaker-Docker.git
+RUN git clone https://github.com/Project-AP3X/Storm-Breaker-Docker.git
 
 # Set the working directory to the cloned repository
 WORKDIR /Storm-Breaker-Docker
